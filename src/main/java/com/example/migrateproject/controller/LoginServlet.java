@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 
 import com.example.migrateproject.model.ReturnData;
 import com.example.migrateproject.validate.Validate;
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import com.example.migrateproject.model.LoginResult;
@@ -80,23 +81,28 @@ public class LoginServlet extends HttpServlet {
             Cookie userCookie = new Cookie("username", l.getUser().getUser_name());
             userCookie.setMaxAge(60 * 60 * 24); // Cookie tồn tại trong 1 ngày (đơn vị giây)
             response.addCookie(userCookie);
-            switch (l.getUser().getRole_id()) {
-                case 1:
-                    System.out.println("login dduocj");
-                    request.setAttribute("user", l.getUser());
-                    request.getRequestDispatcher("/hondaotog3.com/index.jsp").forward(request, response);
-                    break;
-                    case 2:
-                    request.getRequestDispatcher("/hondaotog3.com/index.jsp").forward(request, response);
-                    break;
-                    case 3:
-                    request.getRequestDispatcher("/hondaotog3.com/index.jsp").forward(request, response);
-                    break;
+            HttpSession session=request.getSession();
+            session.setAttribute("user",l.getUser());
+            session.setMaxInactiveInterval(30*30*60);
+            if(l.getUser().getRole_id()!=0){
+                RequestDispatcher dispatcher= request.getRequestDispatcher("/Home-servlet");
+                dispatcher.forward(request,response);
             }
-        }else{
-            
-        }
-        
+//            switch (l.getUser().getRole_id()) {
+//                case 1:
+//                    request.setAttribute("user", l.getUser());
+//                    request.getRequestDispatcher("/hondaotog3.com/index.jsp").forward(request, response);
+//                    RequestDispatcher dispatcher = request.getRequestDispatcher("/Home-servlet");
+//                    dispatcher.forward(request, response);
+//                    break;
+//                case 2:
+//                    request.getRequestDispatcher("/hondaotog3.com/index.jsp").forward(request, response);
+//                    break;
+//                case 3:
+//                    request.getRequestDispatcher("/hondaotog3.com/index.jsp").forward(request, response);
+//                    break;
+//            }
+    }
     }
 
     public LoginResult checkLogin(String userName,String password){

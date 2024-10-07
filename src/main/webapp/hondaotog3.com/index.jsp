@@ -163,158 +163,33 @@
                         </div>
 
                         <div class="box-content group">
+
                             <div class="row">
+                             <c:forEach items="${listTopProductFrist}" var="productFrist">
                                 <div class="col-sm-4">
                                     <div class="product">
-                                        <div class="product-image"><a href="honda-city-481809s.jsp"
-                                                                      title="Honda City Sensing"><img
+                                        <div class="product-image"><a href="#"
+                                                                      title=${productFrist.productName}><img
                                                 alt="Honda City Sensing" class="img-responsive lazyload"
-                                                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                                src=${productFrist.attributeImg}
                                                 style="width: 485px;"
                                                 data-src="../drive.gianhangvn.com/image/honda-city-new-2166737j31185.jpg"/></a>
                                         </div>
 
                                         <div class="caption">
                                             <h3 class="name"><a href="honda-city-481809s.jsp"
-                                                                title="Honda City Sensing">Honda City Sensing</a></h3>
+                                                                title=${productFrist.productName}>${productFrist.productName}</a></h3>
 
-                                            <p class="title-price">Giá từ: <strong class="price">499 Triệu</strong></p>
+                                            <p class="title-price">Giá từ: <strong class="price">${productFrist.price}VND</strong></p>
 
                                             <div class="mh-btn-register"><a
                                                     class="btn btn-outline-secondary mb-2 lowercase"
-                                                    href="javascript:openModelBaoGia()"><i
+                                                    href="#"><i
                                                     class="fa fa-angle-double-right bouncealpha mr-2">&nbsp;</i> <span>Nhận báo giá </span>
                                             </a></div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <div class="product">
-                                        <div class="product-image"><a href="honda-br-v-506977s.jsp"
-                                                                      title="Honda BR-V"><img alt=""
-                                                                                              class="img-responsive lazyload"
-                                                                                              src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                                                                              style="width: 485px;"
-                                                                                              data-src="../drive.gianhangvn.com/image/honda-brv-2445204j31185.jpg"/></a>
-                                        </div>
-
-                                        <div class="caption">
-                                            <h3 class="name"><a href="honda-br-v-506977s.jsp" title="Honda BR-V">Honda
-                                                BR-V</a></h3>
-
-                                            <p class="title-price">Giá từ: <strong class="price">661 Triệu</strong></p>
-
-                                            <div class="mh-btn-register"><a
-                                                    class="btn btn-outline-secondary mb-2 lowercase"
-                                                    href="javascript:openModelBaoGia()"><i
-                                                    class="fa fa-angle-double-right bouncealpha mr-2">&nbsp;</i> <span>Nhận báo giá </span>
-                                            </a></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <div class="product">
-                                        <div class="product-image"><a href="honda-hr-v-481811s.jsp"
-                                                                      title="Honda HR-V"><img alt=""
-                                                                                              class="img-responsive lazyload"
-                                                                                              src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                                                                              style="width: 485px;"
-                                                                                              data-src="../drive.gianhangvn.com/image/honda-hr-v-2166731j31185.jpg"/></a>
-                                        </div>
-
-                                        <div class="caption">
-                                            <h3 class="name"><a href="honda-hr-v-481811s.jsp" title="Honda HR-V">Honda
-                                                HR-V</a></h3>
-
-                                            <p class="title-price">Giá từ: <strong class="price">669 Triệu</strong></p>
-
-                                            <div class="mh-btn-register"><a
-                                                    class="btn btn-outline-secondary mb-2 lowercase"
-                                                    href="javascript:openModelBaoGia()"><i
-                                                    class="fa fa-angle-double-right bouncealpha mr-2">&nbsp;</i> <span>Nhận báo giá </span>
-                                            </a></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <div class="product">
-                                        <div class="product-image"><a href="honda-civic-481810s.jsp"
-                                                                      title="Honda Civic"><img alt=""
-                                                                                               class="img-responsive lazyload"
-                                                                                               src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                                                                               style="width: 485px;"
-                                                                                               data-src="../drive.gianhangvn.com/image/honda-civic-2166736j31185.jpg"/></a>
-                                        </div>
-
-                                        <div class="caption">
-                                            <h3 class="name"><a href="honda-civic-481810s.jsp" title="Honda Civic">Honda
-                                                Civic</a></h3>
-
-                                            <p class="title-price">Giá từ: <strong class="price">730 Triệu</strong></p>
-
-                                            <div class="mh-btn-register"><a
-                                                    class="btn btn-outline-secondary mb-2 lowercase"
-                                                    href="javascript:openModelBaoGia()"><i
-                                                    class="fa fa-angle-double-right bouncealpha mr-2">&nbsp;</i> <span>Nhận báo giá </span>
-                                            </a></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <div class="product">
-                                        <div class="product-image"><a href="honda-cr-v-481812s.jsp"
-                                                                      title="Honda CR-V"><img alt=""
-                                                                                              class="img-responsive lazyload"
-                                                                                              src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                                                                              style="width: 485px;"
-                                                                                              data-src="../drive.gianhangvn.com/image/honda-crv-2524420j31185.jpg"/></a>
-                                        </div>
-
-                                        <div class="caption">
-                                            <h3 class="name"><a href="honda-cr-v-481812s.jsp" title="Honda CR-V">Honda
-                                                CR-V</a></h3>
-
-                                            <p class="title-price">Giá từ: <strong
-                                                    class="price">1.029&nbsp;Triệu</strong></p>
-
-                                            <div class="mh-btn-register"><a
-                                                    class="btn btn-outline-secondary mb-2 lowercase"
-                                                    href="javascript:openModelBaoGia()"><i
-                                                    class="fa fa-angle-double-right bouncealpha mr-2">&nbsp;</i> <span>Nhận báo giá </span>
-                                            </a></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <div class="product">
-                                        <div class="product-image"><a href="honda-accord-481813s.jsp"
-                                                                      title="Honda ACCORD"><img alt=""
-                                                                                                class="img-responsive lazyload"
-                                                                                                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                                                                                                style="width: 485px;"
-                                                                                                data-src="../drive.gianhangvn.com/image/honda-accord-white-2166734j31185.jpg"/></a>
-                                        </div>
-
-                                        <div class="caption">
-                                            <h3 class="name"><a href="honda-accord-481813s.jsp" title="Honda ACCORD">Honda
-                                                ACCORD</a></h3>
-
-                                            <p class="title-price">Giá từ: <strong class="price">1.319 Triệu</strong>
-                                            </p>
-
-                                            <div class="mh-btn-register"><a
-                                                    class="btn btn-outline-secondary mb-2 lowercase"
-                                                    href="javascript:openModelBaoGia()"><i
-                                                    class="fa fa-angle-double-right bouncealpha mr-2">&nbsp;</i> <span>Nhận báo giá </span>
-                                            </a></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div></c:forEach>
                             </div>
                         </div>
                     </div>
@@ -394,66 +269,29 @@
                 </div>
                 <div class="box-content group">
                     <div class="row">
+                    <c:forEach items="${listTop4Civic}" var="listTop4Civicc">
                         <div class="col-6 col-md-3 col-product">
+
                             <div class="product">
                                 <div class="product-image">
-                                    <a href="honda-civic-1-8g-1352398.jsp" title="Honda Civic G"><img
-                                            class="img-responsive lazyload" alt="Honda Civic G"
-                                            data-src="../drive.gianhangvn.com/image/honda-civic-1-8g-2080584j31185x16.jpg"/></a>
-                                </div>
-                                <div class="caption">
-                                    <h3 class="name"><a href="honda-civic-1-8g-1352398.jsp" title="Honda Civic G">Honda
-                                        Civic G</a></h3>
-                                    <div class="content-price">
-                                        <span class="price">770,000,000 VND</span>
-                                        <span class="view"><i class="fa fa-eye"></i><span>2,151 lượt</span></span>
-                                    </div>
-                                    <a class="btn btn-addcart" href="javascript:void(0);" data-id="1352398"
-                                       data-url="https://hondaotolongbienhn.com/gio-hang.jsp" title="Mua ngay"
-                                       data-lang="btn_addcart">THÊM VÀO GIỎ HÀNG</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-product">
-                            <div class="product">
-                                <div class="product-image">
-                                    <a href="honda-civic-1-5rs-1352399.jsp" title="Honda Civic RS"><img
+                                    <a href="honda-civic-1-5rs-1352399.jsp" title=${listTop4Civicc.productName}><img
                                             class="img-responsive lazyload" alt="Honda Civic RS"
-                                            data-src="../drive.gianhangvn.com/image/honda-civic-1-5rs-2080618j31185x16.jpg"/></a>
+                                            data-src=${listTop4Civic.attributeImg}/></a>
                                 </div>
                                 <div class="caption">
                                     <h3 class="name"><a href="honda-civic-1-5rs-1352399.jsp" title="Honda Civic RS">Honda
                                         Civic RS</a></h3>
                                     <div class="content-price">
-                                        <span class="price">870,000,000 VND</span>
+                                        <span class="price">${listTop4Civicc.price}</span>
                                         <span class="view"><i class="fa fa-eye"></i><span>2,874 lượt</span></span>
                                     </div>
-                                    <a class="btn btn-addcart" href="javascript:void(0);" data-id="1352399"
+                                    <a class="btn btn-addcart" href="#" data-id="1352399"
                                        data-url="https://hondaotolongbienhn.com/gio-hang.jsp" title="Mua ngay"
                                        data-lang="btn_addcart">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-6 col-md-3 col-product">
-                            <div class="product">
-                                <div class="product-image">
-                                    <a href="honda-civic-1-5l-rs-1287616.jsp" title="Honda Civic E"><img
-                                            class="img-responsive lazyload" alt="Honda Civic E"
-                                            data-src="../drive.gianhangvn.com/image/honda-civic-1-5l-rs-2080584j31185x16.jpg"/></a>
-                                </div>
-                                <div class="caption">
-                                    <h3 class="name"><a href="honda-civic-1-5l-rs-1287616.jsp" title="Honda Civic E">Honda
-                                        Civic E</a></h3>
-                                    <div class="content-price">
-                                        <span class="price">730,000,000 VND</span>
-                                        <span class="view"><i class="fa fa-eye"></i><span>1,320 lượt</span></span>
-                                    </div>
-                                    <a class="btn btn-addcart" href="javascript:void(0);" data-id="1287616"
-                                       data-url="https://hondaotolongbienhn.com/gio-hang.jsp" title="Mua ngay"
-                                       data-lang="btn_addcart">THÊM VÀO GIỎ HÀNG</a>
-                                </div>
-                            </div>
-                        </div>
+                        </div></c:forEach>
+
                     </div>
                 </div>
             </div>

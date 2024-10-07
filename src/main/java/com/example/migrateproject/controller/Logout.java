@@ -1,10 +1,7 @@
 package com.example.migrateproject.controller;
 
 import jakarta.servlet.ServletException;
-import jakarta.servlet.http.Cookie;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.*;
 
 import java.io.IOException;
 
@@ -22,6 +19,10 @@ public class Logout extends HttpServlet {
                     break;
                 }
             }
+        }
+        HttpSession session=request.getSession(false);
+        if(session!=null){
+            session.invalidate();
         }
         request.getSession().invalidate();
         response.sendRedirect("/hondaotog3.com/login.jsp");

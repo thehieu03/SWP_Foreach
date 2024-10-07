@@ -36,7 +36,7 @@
 <section class="cd-nav">
     <ul class="cd-primary-nav" id="cd-primary-nav">
         <li class="">
-            <a href="index.jsp" title="Trang chủ">Trang chủ</a>
+            <a href="/DataRequestSeverlet?load=home" title="Trang chủ">Trang chủ</a>
         </li>
         <li class="has-children">
             <a href="san-pham.jsp" title="Sản phẩm">Sản Phẩms</a>
@@ -47,7 +47,7 @@
                 <li class="">
      <a href="#" title="Honda City">
      <center><img style="max-width:100%;" class="lazyload" data-src="${product.automaker_img}" /></center>
-     <h2 class="sub-title-menu center">Honda City</h2></a>
+     <h2 class="sub-title-menu center">${product.automaker_name}</h2></a>
            </li>
            </c:forEach>
             </ul>
@@ -68,7 +68,7 @@
         <c:choose>
             <c:when test="${ not empty cookie.username.value}">
                 <li class=""><a href="profile.jsp" title="Profile">${cookie.username.value}</a></li>
-                <li class=""><a href="logout" title="Đăng xuất">Đăng xuất</a></li>
+                <li class=""><a href="${pageContext.request.contextPath}/logout" title="Đăng xuất">Đăng xuất</a></li>
             </c:when>
             <c:otherwise>
                 <li class=""><a href="/hondaotog3.com/login.jsp" title="Đăng nhập">Đăng nhập</a></li>
